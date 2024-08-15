@@ -6,4 +6,5 @@ def addition_function(var1, var2):
 addition_function(var1,var2)
 def sub_function(var1, var2):
     print("difference value: ", (var2-var1))
+sub_function(var1, var2)
 
