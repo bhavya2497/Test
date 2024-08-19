@@ -8,7 +8,7 @@ class TestCalculations(unittest.TestCase):
         self.assertEqual(calculation.get_sum(), 10, 'The sum is correct.')
     def test_difference(self):
         calculation = Calculations(10, 5)
-        self.assertEqual(calculation.get_difference(5))
+        self.assertEqual(calculation.get_difference(), 5, 'Output is correct')
 
 if __name__ == '__main__':
     unittest.main()
