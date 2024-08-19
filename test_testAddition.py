@@ -5,7 +5,7 @@ class TestCalculations(unittest.TestCase):
 
     def test_sum(self):
         calculation = Calculations(8, 2)
-        self.assertEqual(calculation.get_sum(), 10, 'The sum is wrong.')
+        self.assertEqual(calculation.get_sum(), 10, 'The sum is correct.')
     def test_difference(self):
         calculation = Calculations(10, 5)
         self.assertEqual(calculation.get_difference(5))
