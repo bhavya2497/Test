@@ -1,1 +1,1 @@
-print("hello")
+assert 2 + 2 == 4
