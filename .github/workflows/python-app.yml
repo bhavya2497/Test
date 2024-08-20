@@ -37,7 +37,7 @@ jobs:
         run: |
           for dir in */ ; do
           if [ -d "$dir" ]; then
-            if ls "$dir" | grep -E '*_test.py' > /dev/null; then
+            if ls "$dir" | grep -E 'test_*.py' > /dev/null; then
               echo "Running pytest in $dir"
               pytest "$dir"
             else
