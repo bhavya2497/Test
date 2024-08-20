@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - main
-      - feature-test_demo
 
 jobs:
   lint_and_test:
