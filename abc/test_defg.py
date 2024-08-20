@@ -1,5 +1,5 @@
 import pytest
-from abc.defg import MultiplicationAndDivision
+from defg import MultiplicationAndDivision
 class TestMultiplicationAndDivision:
     @pytest.mark.parametrize("a, b, expected", [
         (8, 2, 16),
