@@ -10,8 +10,7 @@ class TestMultiplicationAndDivision:
         def test_get_product(self, a, b, expected):
             calculation = Calculations(a, b)
             assert calculation.get_product() == expected, "Product calculation is incorrect"
-
-        @pytest.mark.parametrize("a, b, expected", [
+    @pytest.mark.parametrize("a, b, expected", [
             (8, 2, 4),
             (21, 7, 3),
             (-10, 5, -2)
