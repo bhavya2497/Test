@@ -40,4 +40,4 @@ jobs:
 
       - name: Run tests in each folder
         run: |
-          pytest .
+          python -m pytest .
