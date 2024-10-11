@@ -7,3 +7,5 @@ class MultiplicationAndDivision:
 
     def get_quotient(self):
             return self.a / self.b
+    def get_addition(self):
+            return self.a + self.b
