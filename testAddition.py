@@ -11,4 +11,7 @@ class Calculations:
     def get_percentile(self):
         return self.a % self.b
 
+    def gjhg:
+        return j;
+
 
