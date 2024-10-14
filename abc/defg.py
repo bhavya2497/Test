@@ -9,3 +9,5 @@ class MultiplicationAndDivision:
             return self.a / self.b
     def get_addition(self):
             return self.a + self.b
+    def get_difference(self):
+        return self.a - self.b
