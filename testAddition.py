@@ -8,5 +8,7 @@ class Calculations:
 
     def get_difference(self):
         return self.a - self.b
+    def get_percentile(self):
+        return self.a % self.b
 
 
