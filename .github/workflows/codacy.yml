@@ -1,0 +1,25 @@
+name: Codacy Analysis
+
+on:
+  pull_request:
+    branches:
+      - main
+      
+
+jobs:
+  codacy-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Run Codacy analysis
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/src \
+            codacy/codacy-analysis-cli \
+            analyze --tool pylint --directory /src
