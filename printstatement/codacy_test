@@ -1,0 +1,15 @@
+# Sample Python Code with some code quality issues for testing Codacy integration
+
+import os
+import sys  # Unused import to trigger Codacy warning
+
+def sample_function():
+    """A sample function with poor variable naming and other issues."""
+    numlist = [1, 2, 3, 4, 5]  # Poor variable name (should trigger a naming convention warning)
+    summ = 0                    # Misspelled variable name (should trigger naming convention issue)
+    for i in numlist:
+        summ += i
+    print(f"Sum: {summ}")
+
+if __name__ == "__main__":
+    sample_function()
